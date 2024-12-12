@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+h1 {
+    margin-top: 2em; /* Adjust this value to move the text further up */
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin-top: 0.5em; /* Adjust this value to control the space between h1 and h2 */
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#drop-area {
+    border: 2px dashed #fff;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2em;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#drop-area.highlight {
+    border-color: #ffeb3b;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.my-form {
+    margin-bottom: 10px;
+}
+
+#fileElem {
+    display: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ffeb3b;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.language-select {
+    margin-top: 1em;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+select:hover {
+    background-color: #f1f1f1;
+}
